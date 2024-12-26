@@ -187,6 +187,9 @@ textarea {
 	justify-content: center;
 	align-items: flex-end;
 	gap: 10px;
+	@media (max-width: 1035px) {
+		align-items: flex-start;
+	}
 }
 
 .kontakth {
