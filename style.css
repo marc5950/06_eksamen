@@ -121,6 +121,12 @@ textarea {
 		transform: translateX(-100vw); /* Flyt hele vejen ud til venstre */
 	}
 }
+
+.herointro {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
 .forsideintro {
 	display: flex;
 	flex-wrap: wrap;
@@ -128,7 +134,7 @@ textarea {
 	gap: 7px;
 	max-width: 600px;
 	h2 {
-		font-size: clamp(1.5rem, 1.2308rem + 1.2308vw, 2rem);
+		font-size: clamp(1.25rem, 0.8654rem + 0.6154vw, 1.5rem);
 	}
 }
 
