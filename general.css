@@ -39,17 +39,6 @@ main {
 	}
 	background: var(--bgcolor);
 }
-#special {
-	margin: 0;
-
-	@media (min-width: 600px) {
-		margin: 0;
-	}
-	@media (min-width: 1300px) {
-		margin: 0 auto 0;
-		max-width: 1600px;
-	}
-}
 
 html {
 	background-color: var(--bgcolor);
@@ -58,6 +47,8 @@ html {
 h1,
 h2,
 h3,
+h4,
+h5,
 p {
 	font-family: inter;
 	color: white;
@@ -83,6 +74,12 @@ h2 {
 h3 {
 	font-size: clamp(1.5rem, 1.2308rem + 1.2308vw, 2rem);
 }
+h4 {
+	font-size: clamp(1.5rem, 1.4327rem + 0.3077vw, 1.625rem);
+}
+h5 {
+	font-size: clamp(1rem, 0.8654rem + 0.6154vw, 1.25rem);
+}
 p {
 	font-size: clamp(1rem, 0.8654rem + 0.6154vw, 1.25rem);
 }
@@ -96,7 +93,7 @@ p {
 	background: linear-gradient(180deg, #146ef4 0%, #1c6ce4 100%);
 	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	font-weight: 700;
-	font-size: 20px;
+	font-size: clamp(1rem, 0.8654rem + 0.6154vw, 1.25rem);
 }
 
 .knap:hover {
@@ -202,7 +199,8 @@ footer {
 }
 
 .footer {
-	background: var(--secondary);
+	background: rgb(151, 143, 170);
+	background: linear-gradient(rgba(151, 143, 170, 1) 71%, rgba(129, 120, 150, 1) 100%);
 	padding: 50px 50px 20px;
 	@media (max-width: 600px) {
 		padding: 50px 20px 20px;
