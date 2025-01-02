@@ -77,8 +77,9 @@ textarea {
 .temacta {
 	display: flex;
 	flex-wrap: wrap;
+	z-index: 100;
 	gap: 20px;
-	padding: 50px;
+	padding: 30px;
 	width: 100%;
 	align-items: flex-start;
 	justify-content: space-evenly;
@@ -138,27 +139,6 @@ textarea {
 	}
 }
 
-.some {
-	display: flex;
-	padding: 5px 0px;
-	flex-direction: column;
-}
-
-.some1,
-.some2 {
-	display: flex;
-	align-items: flex-start;
-	gap: 25px;
-	a {
-		max-width: 75px;
-		max-height: 75px;
-	}
-}
-
-.some2 {
-	margin-top: -7px;
-}
-
 .kontaktmigcta {
 	display: flex;
 	width: 100%;
@@ -167,6 +147,9 @@ textarea {
 	align-items: center;
 	text-align: center;
 	gap: 20px;
+	a {
+		z-index: 100;
+	}
 	.linje {
 		position: absolute;
 		top: 700px;
@@ -250,18 +233,6 @@ textarea {
 }
 
 /* Om mig */
-#special {
-	overflow: hidden;
-	margin: 0;
-
-	@media (min-width: 600px) {
-		margin: 0;
-	}
-	@media (min-width: 1300px) {
-		margin: 0 auto 0;
-		max-width: 1600px;
-	}
-}
 
 .ommig {
 	display: grid;
@@ -357,6 +328,10 @@ textarea {
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
+	h5:hover {
+		transition: color 0.3s ease;
+		color: var(--lillalight);
+	}
 }
 .temao {
 	display: flex;
@@ -425,6 +400,22 @@ textarea {
 	border-radius: 10px;
 	width: 100%;
 	box-shadow: 0 0 20px var(--secondary), /* Glød omkring boksen */ 0 10px 15px rgba(0, 0, 0, 0.3); /* Blød skygge under */
+}
+
+#tiltop {
+	position: fixed;
+	padding: 10px;
+	bottom: 27px;
+	right: 20px;
+	z-index: 1000;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0.5s;
+}
+
+#tiltop.show {
+	opacity: 1;
+	visibility: visible;
 }
 
 @media (max-width: 800px) {
