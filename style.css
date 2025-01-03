@@ -247,6 +247,11 @@ textarea {
 	background: linear-gradient(114deg, rgba(69, 69, 69, 1) 69%, rgba(105, 105, 105, 1) 100%);
 }
 
+.ommign {
+	width: 100%;
+	flex-direction: column;
+}
+
 .ommigv {
 	display: flex;
 	grid-row: 1;
@@ -287,6 +292,63 @@ textarea {
 		grid-row: 1;
 	}
 	animation: mig 4s ease infinite alternate;
+}
+.ommig1 {
+	background: var(--secondary);
+	height: 50px;
+	width: 100%;
+	border-radius: 0 0 15px 15px;
+	@media (max-width: 1630px) {
+		border-radius: 0 0 0 0;
+	}
+}
+.ommig2 {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	justify-content: space-around;
+	margin: 0 10px 50px;
+	align-self: stretch;
+	gap: 50px;
+	@media (max-width: 600px) {
+		gap: 10px;
+	}
+}
+
+.ommig2m {
+	display: flex;
+	flex-direction: column;
+	min-width: 5px;
+	@media (max-width: 600px) {
+		background: white;
+		border-radius: 50px;
+		img {
+			display: none;
+		}
+	}
+}
+.ommig2v,
+.ommig2h {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+	height: fit-content;
+	p {
+		font-size: 16px;
+	}
+	h4 {
+		font-size: 20px;
+	}
+}
+.ommig2v {
+	text-align: end;
+}
+.cvboks {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5px;
+	align-self: stretch;
 }
 
 @keyframes mig {
