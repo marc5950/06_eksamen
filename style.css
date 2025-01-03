@@ -28,6 +28,7 @@
 	font-weight: 700;
 	font-family: Inter;
 	font-size: clamp(1rem, 0.8654rem + 0.6154vw, 1.25rem);
+	cursor: default;
 }
 
 .chatv,
@@ -411,8 +412,11 @@ textarea {
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 0.5s, visibility 0.5s;
+	background: var(--lillalight);
 }
-
+#tiltop:hover {
+	background: var(--lilladark);
+}
 #tiltop.show {
 	opacity: 1;
 	visibility: visible;
